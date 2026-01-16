@@ -1,2 +1,13 @@
 # OccDM
-Data model standard for stellar occultations by small Solar System bodies. Captures event parameters, occulted star properties, derived measurements (size, shape, rings, atmospheres), and chord data. IVOA Working Draft using ivoatex, targeting VO-DML/EPN-TAP compliance and MANGO interoperability.
+This document describes/defines **OccDM**, a data model standard for stellar occultations by small Solar System bodies. It captures event parameters, occulted star properties, derived measurements (size, shape, rings, atmospheres), and chord data. This IVOA Working Draft uses `ivoatex`, targeting VO-DML/EPN-TAP compliance and MANGO interoperability in the [Virtual Observatory](https://ivoa.net).
+
+Stable versions of this document are available through the [IVOA
+document repository](http://ivoa.net/documents/).
+
+To build a PDF version this document, you will need a reasonably
+complete LaTeX installation, a sufficiently capable `make`, preferably
+[latexmk](https://personal.psu.edu/~jcc8/software/latexmk/) and probably
+[rsvg-convert](https://wiki.gnome.org/Projects/LibRsvg). For further
+details, see [ivoatexDoc](https://ivoa.net/documents/Notes/IVOATex/).
+
+This document is distributed under CC-BY-SA.
