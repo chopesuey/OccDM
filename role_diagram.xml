@@ -1,0 +1,48 @@
+<!--
+See https://ivoa.net/documents/Notes/IVOATexDoc/, sect. 2.2.3 for what
+to do with this as a user.
+
+Archdiag maintainers: When adding boxes here, first look for a good place,
+preferably in one of the grid positions given in the comments for the
+WGs (e.g., 55 for Registry).  Good y positions are ones that already
+exist.  Leave out the w at first.
+
+Then, run
+
+make archdiag-debug.svg
+
+and open archdiag-debug.svg in a javascript-enabled browser.  In that
+browser's javascript console you will see lines like:
+
+SpectralDM: 67; 11.5
+
+The first number is the box's natural width, which you should use in the w
+attribute of the rec/prerec.  The second is the offset to x you'd need to
+add to one of the x grid lines (the x=something in the opening comments
+of the various sections) to have the box centered.
+-->
+
+<archdiag xmlns="http://ivoa.net/archdiag">
+
+  <!-- THIS DOCUMENT - highlighted with red border -->
+  <!-- Position in Data Models area, near MANGO -->
+  <thisrec name="OccDM" x="525" y="355" w="55"/>
+
+  <!-- Data Models: foundation layer -->
+  <rec name="VODML" x="512" y="195" w="46"/>
+  <rec name="Meas" x="485" y="240" w="35"/>
+  <rec name="Coords" x="540" y="240" w="44"/>
+  <prerec name="MANGO" x="501" y="320" w="51"/>
+  <rec name="MIVOT" x="440" y="355" w="51"/>
+
+  <!-- DAL: access protocols -->
+  <rec name="TAP" x="660" y="280" w="28"/>
+  <rec name="DataLink" x="628" y="405" w="53"/>
+  <rec name="EPN-TAP" x="617.5" y="205" w="55"/>
+
+  <!-- Semantics -->
+  <rec name="VOUnits" x="220" y="250" w="50"/>
+  <rec name="Vocabularies" x="180" y="355" w="55"/>
+
+</archdiag>
+
